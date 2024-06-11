@@ -1,14 +1,25 @@
+--   -- Configure LazyVim to load gruvbox
+--   {
+--     "LazyVim/LazyVim",
+--     opts = {
+--       colorscheme = "gruvbox",
+--     },
+--   }
+-- }
+-- return {
+--   -- add gruvbox
+--   { "ellisonleao/gruvbox.nvim" },
+--
+--   -- Configure LazyVim to load gruvbox
+--   {
+--     "LazyVim/LazyVim",
+--     opts = {
+--       colorscheme = "gruvbox",
+--     },
+--   }
+-- }
 return {
-  { "shaunsingh/nord.nvim" },
-  {
-    "folke/tokyonight.nvim",
-    lazy = true,
-    opts = { style = "moon" },
-  },
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "nord",
-    },
-  },
+  "folke/tokyonight.nvim",
+  lazy = true,
+  opts = { style = "moon", transparent = true },
 }
