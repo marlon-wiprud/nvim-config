@@ -7,6 +7,8 @@ return {
     opts = {
       inlay_hints = { enabled = false },
       servers = {
+        vtsls = { root_dir = require("lspconfig").util.root_pattern("package.json"), single_file_support = false },
+        tsserver = { root_dir = require("lspconfig").util.root_pattern("package.json"), single_file_support = false },
         denols = {
           root_dir = require("lspconfig.util").root_pattern("deno.json", "deno.jsonc"),
           init_options = {
